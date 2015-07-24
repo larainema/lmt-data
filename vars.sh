@@ -14,8 +14,8 @@ export MYSQL_ROOT_PASSWORD=changeme
 export MYSQL_PASSWORD=changeme
 export PROVIDER_USERNAME=admin
 export PROVIDER_PASSWORD=changeme
-#export PROVIDER_IMAGE_NAME="Ubuntu 14.04 Server Glance Image (Trusty)"
-#export PROVIDER_IMAGE_SETUP_SCRIPT_NAME="prepare_node_devstack_http_proxy.sh"
+export PROVIDER_IMAGE_NAME="Ubuntu 14.04 Server Glance Image (Trusty)"
+export PROVIDER_IMAGE_SETUP_SCRIPT_NAME="prepare_node_devstack_http_proxy.sh"
 export JENKINS_API_USER=jenkins
 #API Key is used if you secure your jenkins with a password
 #export JENKINS_API_KEY=<hex_id>
@@ -26,6 +26,8 @@ export JENKINS_CREDENTIALS_ID=f4f07d8e-2634-4d01-bcf6-7b8be996e062
 export JENKINS_SSH_PUBLIC_KEY_NO_WHITESPACE=
 export JENKINS_SSH_KEY_PATH=jenkins_key
 
-#export HTTP_PROXY=http://myproxy.com:8080/
-#export HTTPS_PROXY=http://myproxy.com:8080/
-#export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com
+export HTTP_PROXY=http://web-proxy.cce.hp.com:8080/
+export HTTPS_PROXY=http://web-proxy.cce.hp.com:8080/
+export no_proxy=localhost,10.0.0.0/8,16.0.0.0/8,127.0.0.1,192.168.20.0/24
+
+export PROJECT_CONFIG=https://github.com/larainema/project-config-lmt
